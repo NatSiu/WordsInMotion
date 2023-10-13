@@ -7,6 +7,16 @@
 body {
   height: 100vh;
   width: 100%;
-  background-color: antiquewhite;
+  background-color: rgb(137, 222, 229);
+  font-family: 'Zen Loop', cursive;
+  font-size: 500%;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(254, 255, 255);
 }
+
+
+
+@keyframes
+
 
