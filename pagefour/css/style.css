@@ -16,7 +16,7 @@ body {
   color: rgb(254, 255, 255);
 }
 
-#Line1 {
+/* #Line1 {
   position: absolute;
   animation-name: firstLine;
   animation-delay: 2s;
@@ -36,7 +36,7 @@ body {
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
-}
+} */
 
 /* #friend:hover {
   font
@@ -44,7 +44,7 @@ body {
 
 
 
-@keyframes firstLine {
+/* @keyframes firstLine {
   from {
     opacity: 0;
     transform: rotate(4deg);
@@ -67,4 +67,4 @@ body {
     margin-left: 50%;
     transform: rotate(-4deg);
   }
-}
+} */
