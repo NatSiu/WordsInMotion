@@ -94,8 +94,8 @@ a {
 }
 
 a:hover {
+  transition: scale(2);
   color: rgb(241, 236, 136);
-  font-size: 320%;
 }
 
 
@@ -121,6 +121,7 @@ a:hover {
     transform: rotate(2deg);
   }
   to {
+    opacity: 100;
     margin-top: 6%;
     margin-left: 40%;
     transform: rotate(-2deg);
@@ -135,6 +136,7 @@ a:hover {
     transform: rotate(-2deg);
   }
   to {
+    opacity: 100;
     margin-top: 13%;
     margin-left: 20%;
     transform: rotate(2deg);
@@ -149,6 +151,7 @@ a:hover {
     transform: rotate(2deg);
   }
   to {
+    opacity: 100;
     margin-top: 20%;
     margin-left: 40%;
     line-height: 1%;;
@@ -164,7 +167,8 @@ a:hover {
     transform: rotate(-2deg);
   }
   to {
-    margin-top: 28%;
+    opacity: 100;
+    margin-top: 25%;
     margin-left: 20%;
     transform: rotate(2deg);
   }
@@ -177,6 +181,7 @@ a:hover {
     transform: rotate(2deg);
   }
   to {
+    opacity: 100;
     padding-bottom: 10%;
     margin-top: 32%;
     margin-left: 40%;
