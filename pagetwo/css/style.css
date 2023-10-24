@@ -9,8 +9,9 @@ body {
   width: 100%;
   margin-top: 10%;
   background-color: rgb(137, 222, 229);
-  font-family: 'Zen Loop', cursive;
-  font-size: 500%;
+  /* font-family: 'Zen Loop', cursive; */
+  font-family: 'Kalam', cursive;
+  font-size: 300%;
   font-weight: bolder;
   text-align: center;
   color: rgb(254, 255, 255);
@@ -21,20 +22,42 @@ body {
   animation-name: firstLine;
   animation-delay: 2s;
   animation-direction: forwards;
-  animation-duration: 7s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
 
 #Line2 {
   position: absolute;
   animation-name: secondLine;
-  animation-delay: 2s;
+  animation-delay: 5s;
   animation-direction: forwards;
-  animation-duration: 7s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line3 {
+  position: absolute;
+  animation-name: thirdLine;
+  animation-delay: 8s;
+  animation-direction: forwards;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line4 {
+  position: absolute;
+  animation-name: fourthLine;
+  animation-delay: 11s;
+  animation-direction: forwards;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
   animation-timing-function: ease-in-out;
 }
 
@@ -47,24 +70,57 @@ body {
 @keyframes firstLine {
   from {
     opacity: 0;
-    transform: rotate(4deg);
+    margin-top: 8%;
+    margin-left: 25%;
+    /* transform: rotate(4deg); */
   }
   to {
-    margin-top: 10%;
-    margin-left: 50%;
-    transform: rotate(-4deg);
+    margin-top: 2%;
+    margin-left: 25%;
+    /* transform: rotate(-4deg); */
   }
 }
 
 @keyframes secondLine {
   from {
-    text-align: right;
     opacity: 0;
-    transform: rotate(4deg);
+    margin-top: 13%;
+    margin-left: 40%;
+    /* transform: rotate(4deg); */
   }
   to {
-    margin-top: 10%;
-    margin-left: 50%;
-    transform: rotate(-4deg);
+    margin-top: 7%;
+    margin-left: 40%;
+    /* transform: rotate(-4deg); */
   }
 }
+
+@keyframes thirdLine {
+  from {
+    opacity: 0;
+    margin-top: 8%;
+    margin-left: 25%;
+    /* transform: rotate(4deg); */
+  }
+  to {
+    margin-top: 2%;
+    margin-left: 25%;
+    /* transform: rotate(-4deg); */
+  }
+}
+
+@keyframes fourthLine {
+  from {
+    opacity: 0;
+    margin-top: 13%;
+    margin-left: 40%;
+    /* transform: rotate(4deg); */
+  }
+  to {
+    margin-top: 7%;
+    margin-left: 40%;
+    /* transform: rotate(-4deg); */
+  }
+}
+
+

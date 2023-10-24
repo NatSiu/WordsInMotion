@@ -8,10 +8,11 @@ body {
   height: 100vh;
   width: 100%;
   margin-top: 10%;
+  padding-bottom: 5%;
   background-color: rgb(124, 210, 218);
   /* font-family: 'Zen Loop', cursive; */
   font-family: 'Kalam', cursive;
-  font-size: 500%;
+  font-size: 300%;
   font-weight: bolder;
   text-align: center;
   color: rgb(254, 255, 255);
@@ -31,7 +32,51 @@ body {
 #Line2 {
   position: absolute;
   animation-name: secondLine;
-  animation-delay: 2s;
+  animation-delay: 7s;
+  animation-direction: forwards;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line3 {
+  position: absolute;
+  animation-name: thirdLine;
+  animation-delay: 12s;
+  animation-direction: forwards;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line4 {
+  position: absolute;
+  animation-name: fourthLine;
+  animation-delay: 17s;
+  animation-direction: forwards;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line5 {
+  position: absolute;
+  animation-name: fifthLine;
+  animation-delay: 22s;
+  animation-direction: forwards;
+  animation-duration: 7s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line6 {
+  position: absolute;
+  animation-name: sixthLine;
+  animation-delay: 27s;
   animation-direction: forwards;
   animation-duration: 7s;
   animation-fill-mode: forwards;
@@ -50,7 +95,7 @@ a {
 
 a:hover {
   color: rgb(241, 236, 136);
-  font-size: 250px;
+  font-size: 320%;
 }
 
 
@@ -58,24 +103,83 @@ a:hover {
 @keyframes firstLine {
   from {
     opacity: 0;
-    transform: rotate(4deg);
+    margin-top: 0%;
+    transform: rotate(2deg);
   }
   to {
-    margin-top: 10%;
-    margin-left: 50%;
-    transform: rotate(-4deg);
+    opacity: 100;
+    margin-top: 2%;
+    margin-left: 30%;
+    transform: rotate(-2deg);
   }
 }
 
 @keyframes secondLine {
   from {
-    text-align: right;
     opacity: 0;
-    transform: rotate(4deg);
+    margin-top: 3%;
+    transform: rotate(2deg);
   }
   to {
+    margin-top: 6%;
+    margin-left: 40%;
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes thirdLine {
+  from {
     margin-top: 10%;
     margin-left: 50%;
-    transform: rotate(-4deg);
+    opacity: 0;
+    transform: rotate(-2deg);
+  }
+  to {
+    margin-top: 13%;
+    margin-left: 20%;
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes fourthLine {
+  from {
+    margin-top: 15%;
+    line-height: 1%;
+    opacity: 0;
+    transform: rotate(2deg);
+  }
+  to {
+    margin-top: 20%;
+    margin-left: 40%;
+    line-height: 1%;;
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes fifthLine {
+  from {
+    margin-top: 23%;
+    margin-left: 50%;
+    opacity: 0;
+    transform: rotate(-2deg);
+  }
+  to {
+    margin-top: 28%;
+    margin-left: 20%;
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes sixthLine {
+  from {
+    margin-top: 26%;
+    opacity: 0;
+    transform: rotate(2deg);
+  }
+  to {
+    padding-bottom: 10%;
+    margin-top: 32%;
+    margin-left: 40%;
+    transform: rotate(-2deg);
   }
 }
