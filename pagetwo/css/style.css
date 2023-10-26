@@ -7,14 +7,12 @@
 body {
   height: 100vh;
   width: 100%;
-  margin-top: 10%;
-  background-color: rgb(137, 222, 229);
-  /* font-family: 'Zen Loop', cursive; */
+  background-color: rgb(124, 210, 218);
   font-family: 'Kalam', cursive;
   font-size: 300%;
   font-weight: bolder;
   text-align: center;
-  color: rgb(254, 255, 255);
+  color: rgb(124, 210, 218);
 }
 
 #Line1 {
@@ -97,12 +95,56 @@ body {
 .troubles {
   font-family: 'Amatic SC', sans-serif;
   size: 300%;
-  color: rgb(92, 20, 20);
-  position: absolute;
   animation-name: troubles;
   animation-delay: 10s;
   animation-direction: alternate;
   animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line5 #stick {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  animation-name: stick;
+  animation-delay: 15s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line5 #together {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  animation-name: together;
+  animation-delay: 15s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+.youve {
+  animation-name: youve;
+  animation-delay: 10s;
+  animation-direction: alternate;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+
+#Line7 #friend {
+  text-decoration: none;
+  color: rgb(124, 210, 218);
+  animation-name: friend;
+  animation-delay: 23s;
+  animation-direction: alternate-reverse;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in-out;
@@ -117,98 +159,91 @@ body {
 @keyframes firstLine {
   from {
     opacity: 0;
-    margin-top: 8%;
-    margin-left: 25%;
-    /* transform: rotate(4deg); */
+    margin-top: 10%;
+    margin-left: 32%;
   }
   to {
-    margin-top: 2%;
-    margin-left: 25%;
-    /* transform: rotate(-4deg); */
+    color: white;
+    margin-top: 5%;
+    margin-left: 32%;
   }
 }
 
 @keyframes secondLine {
   from {
     opacity: 0;
-    margin-top: 13%;
+    margin-top: 15%;
     margin-left: 40%;
-    /* transform: rotate(4deg); */
   }
   to {
-    margin-top: 7%;
+    color: white;
+    margin-top: 10%;
     margin-left: 40%;
-    /* transform: rotate(-4deg); */
   }
 }
 
 @keyframes thirdLine {
   from {
     opacity: 0;
-    margin-top: 18%;
+    margin-top: 20%;
     margin-left: 22%;
-    /* transform: rotate(4deg); */
   }
   to {
-    margin-top: 12%;
+    color: white;
+    margin-top: 15%;
     margin-left: 22%;
-    /* transform: rotate(-4deg); */
   }
 }
 
 @keyframes fourthLine {
   from {
     opacity: 0;
-    margin-top: 23%;
-    margin-left: 35%;
-    /* transform: rotate(4deg); */
+    margin-top: 25%;
+    margin-left: 30%;
   }
   to {
-    margin-top: 17%;
-    margin-left: 40%;
-    /* transform: rotate(-4deg); */
+    color: white;
+    margin-top: 20%;
+    margin-left: 30%;
   }
 }
 
 @keyframes fifthLine {
   from {
     opacity: 0;
-    margin-top: 28%;
+    margin-top: 30%;
     margin-left: 25%;
-    /* transform: rotate(4deg); */
   }
   to {
-    margin-top: 23%;
+    color: white;
+    margin-top: 25%;
     margin-left: 25%;
-    /* transform: rotate(-4deg); */
   }
 }
 
 @keyframes sixthLine {
   from {
     opacity: 0;
-    margin-top: 33%;
-    margin-left: 40%;
-    /* transform: rotate(4deg); */
+    margin-top: 35%;
+    margin-left: 36%;
   }
   to {
-    margin-top: 28%;
-    margin-left: 40%;
-    /* transform: rotate(-4deg); */
+    color: white;
+    margin-top: 30%;
+    margin-left: 36%;
   }
 }
 
 @keyframes seventhLine {
   from {
-    opacity: 0;
-    margin-top: 38%;
-    margin-left: 25%;
-    /* transform: rotate(4deg); */
+    margin-top: 42%;
+    margin-left: 30%;
   }
   to {
-    margin-top: 33%;
-    margin-left: 25%;
-    /* transform: rotate(-4deg); */
+    color: white;
+    margin-top: 37%;
+    margin-left: 30%;
+    font-size: 150%;
   }
 }
 
@@ -218,8 +253,43 @@ body {
   }
   to {
     transform: rotate(-5deg) scale(2,1) skew(3deg);
-    padding-left: 2%;
-    padding-right: 2%;
+    color: rgb(92, 20, 20);
   }
 }
 
+@keyframes troubles {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg) scale(2,1) skew(3deg);
+    color: rgb(92, 20, 20);
+  }
+}
+
+@keyframes friend {
+  from {
+    color: rgb(124, 210, 218);
+  }
+  to {
+    color: rgb(255, 245, 106);
+  }
+}
+
+@keyframes stick {
+  from {
+    color: rgb(124, 210, 218);
+  }
+  to {
+    color: rgb(219, 255, 111);
+  }
+}
+
+@keyframes together {
+  from {
+    color: rgb(124, 210, 218);
+  }
+  to {
+    color: rgb(219, 255, 111);
+  }
+}
